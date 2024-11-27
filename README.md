@@ -57,7 +57,7 @@ The project is developed using modern development practices:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/learnconnect.git
+   git clone https://github.com/SeniorTurkmen/LearnConnect.git
    cd learnconnect
    ```
 
