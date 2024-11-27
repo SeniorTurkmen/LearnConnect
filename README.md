@@ -1,89 +1,109 @@
-# LearnConnect-ios
 
-## Getting Started
+# LearnConnect
+
+LearnConnect is a modern video-based education platform that allows users to register for courses, manage their profiles, and watch course videos. It is designed with modern software architecture and optimized for performance and user experience.
+
+## Features
+
+- **User Management**:
+  - User registration and login with email and password.
+  - User profile viewing.
+
+- **Course Management**:
+  - Listing available courses.
+  - Enrolling users in courses.
+
+- **Video Player**:
+  - Watching videos of enrolled courses.
+  - Local saving of video progress for seamless playback.
+
+- **Dark Mode Support**:
+  - Toggle dark mode for a better viewing experience.
+
+---
+
+## Architecture and Technologies
+
+The project is developed using modern development practices:
+
+- **Platform**:
+  - iOS: Swift
+  - Android: Kotlin
+- **Architecture**: MVVM (Model-View-ViewModel)
+- **Database**: CoreData (for offline video progress and data management)
+- **Testing**: Unit tests for critical functionalities
+- **Backend Integration**:
+
+    **Firebase services for:**
+  - Authentication
+
+    **Supabase for:**
+  - Real-time database
+  - Cloud messaging
+  - Crashlytics for error reporting
+
+---
+
+## Setup and Installation
 
 ### Prerequisites
 
-- Xcode
-- CocoaPods or Swift Package Manager (SPM)
-- SwiftLint
-- Design file: <https://www.figma.com/design/eMU757gaTm6Gdv4hTBWFdG/Online-Learning-App-Design-(Community)?node-id=0-1&node-type=canvas&t=O5Ue7Pba2v4XDsp8-0>
+1. Install [Xcode](https://developer.apple.com/xcode/) (for iOS) or Android Studio (for Android).
+2. Ensure you have the latest version of Swift (for iOS) or Kotlin (for Android).
+3. Install Firebase CLI for backend configuration.
 
-### Installation
+### Steps
 
 1. Clone the repository:
 
-    ```sh
-    git clone https://github.com/your-repo/LearnConnect.git
-    cd LearnConnect
-    ```
+   ```bash
+   git clone https://github.com/yourusername/learnconnect.git
+   cd learnconnect
+   ```
 
 2. Install dependencies:
+   - **iOS**:
 
-    ```sh
-    pod install
+    You should need to download swiftgen form brew and run the following command
+
+    ```bash
+    cd LearnConnect/LearnConnect/PackagesSPM/Resources
+    swift package --allow-writing-to-package-directory generate-code-for-resources
     ```
 
-3. Open the project in Xcode:
+3. Configure Firebase:
+   - Add the respective `GoogleService-Info.plist` (iOS) or `google-services.json` (Android) files into the project as per the environment (Dev, Beta, Production).
 
-    ```sh
-    open LearnConnect.xcworkspace
-    ```
+---
 
-### Configuration
+## Performance Optimization
 
-Configure Firebase by setting the appropriate `GoogleService-Info.plist` file based on the build configuration. The script `.scripts/firebase.sh` handles this automatically.
+- Video loading times are optimized to be under 2 seconds.
+- Offline data management ensures smooth operation in limited connectivity.
 
-### Build and Run
+---
 
-1. Select the appropriate scheme in Xcode.
-2. Build and run the project using Xcode.
+## Testing
 
-## Code Quality
+Unit tests are implemented for critical functionalities:
 
-This project uses SwiftLint for code quality and linting. The configuration is defined in `.swiftlint.yml` and `.swiftlint-ci.yml`.
+- **Authentication**: Verifies secure user login and registration.
+- **Course Enrollment**: Tests the user flow for enrolling in courses.
 
-### SwiftLint Configuration
+To run the tests:
 
-- **Excluded Paths**:
-  - Pods
-  - Carthage
-  - DerivedData
-  - "*Tests"
-  - .scripts
-  - LearnConnect/Packages/Environments
-  - LearnConnect/Packages/Resources
-  - LearnConnect/Packages/Logger
-  - LearnConnect/Packages/LDSStory
+```bash
+xcodebuild test -scheme LearnConnectTests
+```
 
-- **Disabled Rules**:
-  - discarded_notification_center_observer
-  - notification_center_detachment
-  - unused_capture_list
-  - inclusive_language
+---
 
-- **Analyzer Rules**:
-  - unused_import
+## Design
 
-- **Opt-in Rules**:
-  - array_init
-  - attributes
-  - closure_body_length
-  - closure_end_indentation
-  - closure_spacing
-  - collection_alignment
-  - convenience_type
-  - direct_return
-  - discouraged_object_literal
-  - empty_collection_literal
-  - empty_count
-  - empty_string
-  - enum_case_associated_values_count
+The app's design is based on the [Figma community file](https://www.figma.com/design/eMU757gaTm6Gdv4hTBWFdG/Online-Learning-App-Design-(Community)).
 
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
+---
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
