@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  UIComponents
+
+  Created by Mustafa Turkmen on 25.11.2024.
+  
+*/
+// MARK: - Generic
+"Generic.ok" = "Tamam";
+"Generic.cancel" = "İptal";
+"Generic.close" = "CLOSE";
+"Generic.error" = "Error";
+"Generic.warning" = "Warning";
+"Generic.yes" = "Yes";
+"Generic.no" = "No";
+"Generic.done" = "Done";
+"Generic.app_name" = "A101";
+"Generic.check_connection" = "Please check your internet connection.";
+"Generic.are_you_sure" = "Are You Sure?";
+"Generic.yes_i_am_sure" = "Evet, Eminim";
+"Generic.give_up" = "Vazgeç";
+"Generic.defaultTitle" = "Error";
+"Generic.successTitle" = "Success";
+"Generic.defaultMessage" = "Hay aksi! Ufak bir problem var. Bir şeyler ters gitti. Lütfen daha sonra tekrar dene.";
+"Generic.defaultPositiveButton" = "Tekrar Dene";
+
+/// MARK: - Reachability
+"Reachability.title" = "Bağlantında bir problem var";
+"Reachability.desc" = "İnternet bağlantın kopmuş olabilir. Lütfen daha sonra tekrar dene.";
+"Reachability.button" = "Tamam";
+
+/// MARK: - Rules
+"Rules.phone_message" = "Telefon numarası kontrol edilmeli";
+"Rules.only_char_message" = "Sadece alfabetik karakter kullanılmalı";
+"Rules.min_value_message" = "En az \%@ karakterden oluşmalı";
+"Rules.required_message" = "Bu alan boş bırakılamaz";
+"Rules.email_message" = "Geçersiz mail adresi";

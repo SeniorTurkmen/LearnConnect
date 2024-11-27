@@ -1,0 +1,49 @@
+input_dir: Sources/Resources
+#output_dir: Sources/Resources
+
+strings:
+  inputs: Strings/en.lproj/Localizable.strings
+  outputs:
+    - templatePath: SwiftGenTemplates/strings.stencil
+      output: ${DERIVED_SOURCES_DIR}/StringConstants.swift
+      params:
+          bundle: Bundle.module
+          publicAccess: public
+xcassets:
+  - inputs:
+    - Assets/Colors.xcassets
+    - Assets/Icons.xcassets
+    - Assets/Images.xcassets
+    outputs:
+      - templateName: swift5
+        output: ${DERIVED_SOURCES_DIR}/Assets.swift
+        params:
+            bundle: Bundle.module
+            publicAccess: public
+
+  - inputs:
+    - Assets/Colors.xcassets
+    outputs:
+      - templatePath: SwiftGenTemplates/colors.stencil
+        output: ${DERIVED_SOURCES_DIR}/UIColor+Colors.swift
+        params:
+          bundle: Bundle.module
+          publicAccess: public
+          
+  - inputs:
+    - Assets/Icons.xcassets
+    outputs:
+      - templatePath: SwiftGenTemplates/icons.stencil
+        output: ${DERIVED_SOURCES_DIR}/UIImage+Icons.swift
+        params:
+            bundle: Bundle.module
+            publicAccess: public
+            
+  - inputs:
+    - Assets/Images.xcassets
+    outputs:
+      - templatePath: SwiftGenTemplates/images.stencil
+        output: ${DERIVED_SOURCES_DIR}/UIImage+Images.swift
+        params:
+            bundle: Bundle.module
+            publicAccess: public

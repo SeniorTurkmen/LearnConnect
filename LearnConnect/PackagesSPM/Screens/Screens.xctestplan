@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "C2B912E3-8DDD-41A2-9066-B970EB25D109",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:LearnConnect.xcodeproj",
+        "identifier" : "5725A9772CF790B10029DE6B",
+        "name" : "LearnConnectTest"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:LearnConnect\/PackagesSPM\/Screens",
+        "identifier" : "ScreensTests",
+        "name" : "ScreensTests"
+      }
+    }
+  ],
+  "version" : 1
+}

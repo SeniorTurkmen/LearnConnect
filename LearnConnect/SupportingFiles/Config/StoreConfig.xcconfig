@@ -1,0 +1,14 @@
+//
+//  StoreConfig.xcconfig
+//   
+//
+//  Created by Mustafa Turkmen on 25.11.2024.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+APP_NAME = LearnConnect
+APP_ICON_NAME = AppIcon
+BUNDLE_ID = com.LearnConnect.ios
+UNIVERSALHOLST = https://www.host.com

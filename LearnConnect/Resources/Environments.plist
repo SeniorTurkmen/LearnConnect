@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>services</key>
+	<array>
+		<dict>
+			<key>environments</key>
+			<array>
+				<dict>
+					<key>id</key>
+					<string>local</string>
+					<key>name</key>
+					<string>local</string>
+					<key>value</key>
+					<string>local</string>
+				</dict>
+				<dict>
+					<key>id</key>
+					<string>test</string>
+					<key>name</key>
+					<string>test</string>
+					<key>value</key>
+					<string>https://kohtwpgcvqesnotvwemg.supabase.co/rest/v1/</string>
+				</dict>
+				<dict>
+					<key>id</key>
+					<string>preprod</string>
+					<key>name</key>
+					<string>preprod</string>
+					<key>value</key>
+					<string>https://kohtwpgcvqesnotvwemg.supabase.co/rest/v1/</string>
+				</dict>
+				<dict>
+					<key>id</key>
+					<string>prod</string>
+					<key>name</key>
+					<string>prod</string>
+					<key>value</key>
+					<string>https://kohtwpgcvqesnotvwemg.supabase.co/rest/v1/</string>
+				</dict>
+			</array>
+			<key>id</key>
+			<string>learn_base_api</string>
+			<key>name</key>
+			<string>Auth Services</string>
+		</dict>
+	</array>
+</dict>
+</plist>
